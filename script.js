@@ -1,7 +1,18 @@
-var height = 600;
-var width = 600;
+/*
+    Denny Ho
+    script.js
 
+    Script sets up initial data and binds data to SVG rects.
+    Script holds parameters for the SVG objects. 
+*/
+
+// SVG dims
+var height = 700;
+var width = 700;
+
+// Data values
 var data = [];
+var sorted = [];
 var length = 50;
 
 // Create array of rectangle length values
@@ -13,12 +24,10 @@ for (i = 0; i < length; i++) {
     data.push(val);
 }
 
-sorted = [];
-durationTime = 10;
-steps = 0;
+var reset = false;
 
 // Create rects using d3 join and data array
-d3.select("#vis1").append("svg").attr("width", width).attr("height", height).attr("class", "my-chart").attr("id", "chart1");
+d3.select("#vis1").append("svg").attr("width", width).attr("height", height);
 var rects = d3.select("#vis1")
     .select("svg")
     .selectAll("rect")
@@ -48,8 +57,7 @@ function update() {
         return 0; 
     })
     .attr("transform", function(d, i) {
-        console.log(i);
-        return `translate(${0},${yScale(i)})`
+        return `translate(${0},${yScale(i)})`;
     })
     .attr("fill", function(val) {
         return d3.lab(80, -60, 0);

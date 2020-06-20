@@ -14,3 +14,4 @@ Skills developed in this project:
 3. Converting loop based algorithms to recursive based ones
 4. Delaying animations with d3.js
 5. JavaScript, HTML, CSS skills
+6. Practice using the Bootstrap library to format webpage

@@ -6,7 +6,7 @@ View and interact with the webpage here:
 
 https://dennyho2020.github.io/Animated-Sorting-Algorithms/
 
-*note: please let the alorithm and animation finish before pressing Reset
+*note: please let the algorithm and animation finish before pressing Reset
 
 Skills developed in this project:
 1. Displaying and animating data with d3.js

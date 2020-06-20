@@ -13,7 +13,7 @@ var width = 700;
 // Data values
 var data = [];
 var sorted = [];
-var length = 50;
+var length = 60;
 
 // Create array of rectangle length values
 for (i = 0; i < length; i++) {

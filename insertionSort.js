@@ -1,5 +1,7 @@
 // Insertion Sorts sorts by inserting values from the unsorted data into a sorted list
 // This is done by partitioning the data into a sorted and unsorted section
+// Worst Case n^2
+// Best Case n
 function insertionSort() {
     var value = data.shift();
     sorted.push(value);      
